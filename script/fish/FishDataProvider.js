@@ -3,7 +3,7 @@ const fishCollection = [
       name: "Jerry",
       species: "BlueGill",
       food: "Cats",
-      location: "neighbor's pond",
+      location: "Fall Creek Falls",
       length: 4,
       image: "Bluegill.jpg"
     },
@@ -11,7 +11,7 @@ const fishCollection = [
       name: "Garry",
       species: "Large Mouth Bass",
       food: "floaty bits",
-      location: "Harpeth River",
+      location: "Fall Creek Falls",
       length: 18,
       image: "large mouth bass.jpg"
     },
@@ -19,7 +19,7 @@ const fishCollection = [
       name: "Tom",
       species: "Cat Fish",
       food: "Mice",
-      location: "Harpeth River",
+      location: "Fall Creek Falls",
       length: 24,
       image: "channel cat.jpg"
     }
