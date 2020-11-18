@@ -57,3 +57,8 @@ header {
 .container--left article {
   margin-bottom: 25px;
 }
+
+.header{
+  display: flex;
+  align-content: center;
+}
