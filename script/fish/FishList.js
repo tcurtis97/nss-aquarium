@@ -1,4 +1,6 @@
-import { useFish } from './FishDataProvider.js'
+import { mostHolyFish } from './FishDataProvider.js'
+import { soldierFish } from './FishDataProvider.js'
+import { nonHolyFish } from './FishDataProvider.js'
 import { Fish } from "./Fish.js"
 
 export const FishList = () => {
@@ -6,10 +8,24 @@ export const FishList = () => {
 
  
   const contentElement = document.querySelector(".fishList")
-  const allTheFish = useFish()
+  const holyFish = mostHolyFish()
+  const soldiers = soldierFish()
+  const losers = nonHolyFish()
 
-  for (const fishObject of allTheFish) {
+  for (const fishObject of holyFish) {
     const fishHTML = Fish(fishObject)
     contentElement.innerHTML += fishHTML
   }
+
+
+for (const fishObject of soldiers) {
+  const fishHTML = Fish(fishObject)
+  contentElement.innerHTML += fishHTML
+}
+
+
+for (const fishObject of losers) {
+  const fishHTML = Fish(fishObject)
+  contentElement.innerHTML += fishHTML
+}
 }
